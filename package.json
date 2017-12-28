@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-jsx-inject",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Babel plugin for JSX to JS transformation for mi2js library",
   "main": "index.js",
   "unpkg": "dist/babel-plugin-jsx-inject.min.js",
