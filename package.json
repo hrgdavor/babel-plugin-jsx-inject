@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-jsx-inject",
   "version": "1.0.0",
-  "description": "Babel plugin for JSX to JS transformation for mi2js library",
+  "description": "Babel plugin to inject JSX from external file.",
   "main": "index.js",
   "unpkg": "dist/babel-plugin-jsx-inject.min.js",
   "files": [
