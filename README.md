@@ -2,7 +2,7 @@
 
 > Babel plugin to inject JSX from external file.
 
-Combined with [babel-plugin-jsx-simple](https://github.com/hrgdavor/babel-plugin-jsx-simple)
+Can be combined with [babel-plugin-jsx-simple](https://github.com/hrgdavor/babel-plugin-jsx-simple)
 and [babel-plugin-jsx-translate](https://github.com/hrgdavor/babel-plugin-jsx-translate)
 
 Used in [mi2js](https://github.com/hrgdavor/mi2js) library.
