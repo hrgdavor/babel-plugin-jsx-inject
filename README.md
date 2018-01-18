@@ -10,7 +10,15 @@ Used in [mi2js](https://github.com/hrgdavor/mi2js) library.
 
 # Usage
 
-For now replaces ocurence of an `return <template/>` statement with JSX from external file.
+Used with babel by adding plugin to `.babelrc`
+```json
+{
+    plugins: ["jsx-inject"]
+}
+```
+
+
+The plugin replaces occurrence of an `return <template/>` statement with JSX from external file.
 
 If you jou have a file `sample.js` with:
 
