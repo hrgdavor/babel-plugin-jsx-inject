@@ -8,3 +8,52 @@ and [babel-plugin-jsx-translate](https://github.com/hrgdavor/babel-plugin-jsx-tr
 Used in [mi2js](https://github.com/hrgdavor/mi2js) library.
 
 
+# Usage
+
+For now replaces ocurence of an `return <template/>` statement with JSX from external file.
+
+If you jou have a file `sample.js` with:
+
+```js
+//...
+    function myFunc(h){
+        return <template/>
+    }
+//...
+```
+
+and template file `sample.tpl` in the same folder
+
+```js
+<div>
+    <h1>Title</h1>
+    <p>{state.text}</p>
+</div>
+```
+
+the `sample.tpl` will be injected in the `sample.js` resulting in something like this
+
+```js
+//...
+    function myFunc(h){
+        return <div>
+            <h1>Title</h1>
+            <p>{state.text}</p>
+        </div>
+    }
+//...
+```
+
+# arrow expression
+
+for purpose of catching a return statement an arrow expression
+
+```js
+applyHtml( h=>)<template/> );
+```
+
+is pretty much the same (except of arrow expression scoping) as 
+
+```js
+applyHtml( function(h){ return <template/>;} );
+```
